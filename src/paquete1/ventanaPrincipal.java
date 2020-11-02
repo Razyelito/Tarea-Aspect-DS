@@ -46,14 +46,17 @@ public class ventanaPrincipal extends JFrame implements ActionListener{
 		
 		if(evento.getSource() == btn1) {
 			getContentPane().setBackground(Color.BLUE);
+			System.out.println("Blue");
 		}
 		
 		if(evento.getSource() == btn2) {
 			getContentPane().setBackground(Color.RED);
+			System.out.println("Red");
 		}
 		
 		if(evento.getSource() == btn3) {
 			getContentPane().setBackground(Color.BLACK);
+			System.out.println("Black");
 		}
 	}
 
