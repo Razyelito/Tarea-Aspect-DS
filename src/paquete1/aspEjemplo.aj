@@ -12,5 +12,14 @@ public aspect aspEjemplo {
 	before(): function(){
 		System.out.println("Aspecto Realizado");
 	}
+	
+	
+	pointcut function2():
+		call( void paquete1.ventanaPrincipal.reSize(..));
+	
+	after(): function(){
+		System.out.println("Cambio el tamaño");
+	}
+
 
 }
