@@ -17,8 +17,8 @@ public aspect aspEjemplo {
 	pointcut function2():
 		call( void paquete1.ventanaPrincipal.reSize(..));
 	
-	after(): function(){
-		System.out.println("Cambio el tamaño");
+	after(): function2(){
+		System.out.println("Cambio el tamaÃ±o");
 	}
 
 
